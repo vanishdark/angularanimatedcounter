@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "9"
+dist: trusty
+sudo: required
+branches:
+  only:
+    - master
+before_script:
+  - npm install
+script:
+  - cd projects/ngx-animated-counter
+  - npm version minor -m "Upgrade to %s [skip ci]"
+  - git push && git push --tags
+  - cd ../..
+  - npm run build
+  - ng lint
+  - ng build --prod --base-href https://github.com/vanishdark/
