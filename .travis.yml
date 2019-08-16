@@ -15,4 +15,4 @@ script:
   - cd ../..
   - npm run build
   - ng lint
-  - ng build --prod --base-href https://github.com/vanishdark/
+  - ng build --prod --base-href https://vanishdark.github.io/angularanimatedcounter/
