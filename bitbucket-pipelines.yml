@@ -1,0 +1,28 @@
+image: atlassian/default-image:2
+pipelines:
+  default:
+    - step:
+        name: Install & Build
+        script:
+          - npm install
+          - cd projects/ngx-animated-counter
+          - npm version minor -m "Upgrade to %s [skip ci]"
+          - git push && git push --tags
+          - cd ../..
+          - npm run build
+          - pipe: atlassian/npm-publish:0.2.0
+            variables:
+              NPM_TOKEN: $NPM_LOGIN
+              FOLDER: "./dist/ngx-animated-counter"
+              DEBUG: 'true'
+    - step:
+        name: Deploy To Firebase
+        script:
+          - pipe: atlassian/firebase-deploy:0.3.3
+            variables:
+              FIREBASE_TOKEN: '1/uXmJILxjegoSGH72bptW4iTuRLey7g8TLR7HfX4g0T0'
+              DEBUG: 'true'
+              # PROJECT_ID: '<string>' # Optional.
+              # MESSAGE: '<string>' # Optional.
+              # EXTRA_ARGS: '<string>' # Optional.
+              # DEBUG: '<boolean>' # Optional.
