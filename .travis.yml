@@ -9,10 +9,8 @@ branches:
 before_script:
   - npm install
 script:
-  - cd projects/ngx-animated-counter
   - npm version minor -m "Upgrade to %s [skip ci]"
   - git push && git push --tags
-  - cd ../..
   - npm run build
   - ng lint
   - ng build --prod --base-href https://vanishdark.github.io/angularanimatedcounter/
