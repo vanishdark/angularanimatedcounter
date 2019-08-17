@@ -22,15 +22,13 @@ jobs:
     - stage: lint
       script:
         - ng lint
-    - stage: test
-      script:
-        - npm run test:lib-coverage
-        - npm run report-coverage:lib
+#    - stage: test
+ #     script:
+ #       - npm run test:lib-coverage
+ #       - npm run report-coverage:lib
     - stage: update version
       script:
         - npm version minor -m "Upgrade to %s [skip ci]" --force
-      deploy:
-
     - stage: build & publish showcase
       script:
         - npm run build:demo

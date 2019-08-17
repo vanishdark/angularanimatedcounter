@@ -1,10 +1,11 @@
 ## Ngx-Animated-Counter
 ![npm](https://img.shields.io/npm/v/ngx-animated-counter)
-![Bitbucket Pipelines](https://img.shields.io/bitbucket/pipelines/vanishdark/angularanimatedcounter)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues-raw/vanishdark/angularanimatedcounter)
+![Travis (.com) branch](https://img.shields.io/travis/com/vanishdark/angularanimatedcounter/release)
+![GitHub issues](https://img.shields.io/github/issues/vanishdark/angularanimatedcounter)
+![NPM](https://img.shields.io/npm/l/ngx-animated-counter)
 
 Ngx-Animated-Counter is a simple counter styled with custom themes from bootstrap.
-#####Table of Contents
+## Table of Contents
 [Compatibility](#compatibility)
 
 [Dependencies](#dependencies)
@@ -51,9 +52,9 @@ npm i --save ngx-animated-counter
 #### Issues
 
 If you find any problem, question or suggestion you apply your issue in
-[NgxAnimatedCounter Issues](https://bitbucket.org/vanishdark/angularanimatedcounter/issues)
+[NgxAnimatedCounter Issues](https://github.com/vanishdark/angularanimatedcounter/issues)
 
 
 #### Documentation
 
-You can find help for most common settings and setup in [NgxAnimatedCounter wiki](https://bitbucket.org/vanishdark/angularanimatedcounter/wiki/Home).
+You can find help for most common settings and setup in [NgxAnimatedCounter wiki](https://github.com/vanishdark/angularanimatedcounter/wiki).
