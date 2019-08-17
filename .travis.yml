@@ -38,6 +38,7 @@ jobs:
         skip_cleanup: true
         github_token: $GITHUB_TOKEN
         local_dir: dist/angularanimatedcounter
+        target_branch: gh-pages
       on:
         branch: gh-pages
     - stage: build & publish lib
