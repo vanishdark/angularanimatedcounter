@@ -8,10 +8,7 @@ branches:
     - release
 before_script:
   - npm install
-  - npm install -g codecov
 script:
-  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
-  - codecov
   - npm version minor -m "Upgrade to %s [skip ci]" --force
   - ng lint
   - ng build --prod --base-href https://vanishdark.github.io/angularanimatedcounter/
