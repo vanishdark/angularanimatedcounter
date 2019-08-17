@@ -12,6 +12,19 @@
   "directories": {
     "lib": "projects/ngx-animated-counter"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "projects/**/*.ts": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "test:lib-coverage": "ng test ng-alert --code-coverage --watch=false",
+  "report-coverage:lib": "cat ./coverage/ng-alert/lcov.info | codecov",
   "private": true,
   "dependencies": {
     "@angular/animations": "^7.2.15",
@@ -42,7 +55,9 @@
     "@types/jasminewd2": "^2.0.6",
     "@types/node": "~8.9.4",
     "bootstrap": "^4.3.1",
+    "codecov": "^3.5.0",
     "codelyzer": "~4.5.0",
+    "husky": "^3.0.3",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "jquery": "^3.4.1",
@@ -51,10 +66,12 @@
     "karma-coverage-istanbul-reporter": "~2.0.1",
     "karma-jasmine": "~1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
-    "puppeteer": "^1.13.0",
+    "lint-staged": "^9.2.1",
     "ng-packagr": "^4.3.1",
     "popper.js": "^1.15.0",
+    "prettier": "^1.18.2",
     "protractor": "~5.4.0",
+    "puppeteer": "^1.13.0",
     "ts-node": "~7.0.0",
     "tsickle": "0.34.0",
     "tslib": "^1.9.0",
