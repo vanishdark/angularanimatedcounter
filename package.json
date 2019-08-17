@@ -7,6 +7,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "test:lib-coverage": "ng test ng-alert --code-coverage --watch=false",
+    "report-coverage:lib": "cat ./coverage/ng-alert/lcov.info | codecov",
     "copy:readme": "copyfiles ./README.md ./dist/ngx-animated-counter",
     "build": "npm run build:lib && npm run build:showcase",
     "build:lib": "npm run copy:readme && ng build NgxAnimatedCounter",
@@ -26,8 +28,6 @@
       "git add"
     ]
   },
-  "test:lib-coverage": "ng test ng-alert --code-coverage --watch=false",
-  "report-coverage:lib": "cat ./coverage/ng-alert/lcov.info | codecov",
   "private": true,
   "dependencies": {
     "@angular/animations": "^7.2.15",
