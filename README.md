@@ -1,27 +1,59 @@
-# Y
+## Ngx-Animated-Counter
+![npm](https://img.shields.io/npm/v/ngx-animated-counter)
+![Bitbucket Pipelines](https://img.shields.io/bitbucket/pipelines/vanishdark/angularanimatedcounter)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues-raw/vanishdark/angularanimatedcounter)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+Ngx-Animated-Counter is a simple counter styled with custom themes from bootstrap.
+#####Table of Contents
+[Compatibility](#compatibility)
 
-## Development server
+[Dependencies](#dependencies)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+[Installation](#installation)
 
-## Code scaffolding
+[Issues](#issues)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+[Documentation](#documentation)
 
-## Build
+### Compatibility
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```
+Angular	- 7.x.x - 8.x.x
+```
+#### Dependencies
 
-## Running unit tests
+May need this dependencies to work properly:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+Bootstrap CSS - 4.x.x < 4.3.1
+```
 
-## Running end-to-end tests
+#### Installation
+You will need to install this modules in any order, but try to keep this version. If you use other versions and still work let me know.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Install Bootstrap version 4.3.1 (tested).
+ ```npm
+npm i --save bootstrap@4.3.1
+```
+Install JQuery required by bootstrap.
+```
+npm i --save jquery@3.4.1
+```
+Install Popper.js required by bootstrap.
+```
+npm i --save popper.js@1.15.0
+```
+Finally install NgxAnimatedCounter.
+ ```npm
+npm i --save ngx-animated-counter 
+```
 
-## Further help
+#### Issues
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+If you find any problem, question or suggestion you apply your issue in
+[NgxAnimatedCounter Issues](https://bitbucket.org/vanishdark/angularanimatedcounter/issues)
+
+
+#### Documentation
+
+You can find help for most common settings and setup in [NgxAnimatedCounter wiki](https://bitbucket.org/vanishdark/angularanimatedcounter/wiki/Home).
