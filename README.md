@@ -1,4 +1,7 @@
 ## Ngx-Animated-Counter
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/vanishdark/angularanimatedcounter.svg)](https://greenkeeper.io/)
+
 ![npm](https://img.shields.io/npm/v/ngx-animated-counter)
 ![Travis (.com) branch](https://img.shields.io/travis/com/vanishdark/angularanimatedcounter/release)
 ![GitHub issues](https://img.shields.io/github/issues/vanishdark/angularanimatedcounter)
