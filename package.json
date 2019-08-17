@@ -42,7 +42,7 @@
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0",
     "core-js": "^3.2.1",
-    "ngx-animated-counter": "^0.1.0",
+    "ngx-animated-counter": "^1.0.0",
     "rxjs": "~6.5.2",
     "zone.js": "~0.10.2"
   },
