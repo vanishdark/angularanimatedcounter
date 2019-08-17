@@ -4,10 +4,13 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "copy:readme": "copyfiles ./README.md ./dist/ngx-animated-counter",
+    "build": "npm run build:lib && npm run build:showcase",
+    "build:lib": "npm run copy:readme && ng build NgxAnimatedCounter",
+    "build:showcase": "ng build angularanimatedcounter --base-href='https://vanishdark.github.io/angularanimatedcounter/'"
   },
   "directories": {
     "lib": "projects/ngx-animated-counter"
@@ -57,6 +60,7 @@
     "bootstrap": "^4.3.1",
     "codecov": "^3.5.0",
     "codelyzer": "~4.5.0",
+    "copyfiles": "^2.1.1",
     "husky": "^3.0.3",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
