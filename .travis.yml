@@ -28,6 +28,8 @@ jobs:
     - stage: update version
       script:
         - npm version minor -m "Upgrade to %s [skip ci]" --force
+      after_success:
+        - .push.sh
     - stage: build & publish showcase
       script:
         - npm run build:showcase
@@ -36,10 +38,8 @@ jobs:
         skip_cleanup: true
         github_token: $GITHUB_TOKEN
         local_dir: dist/angularanimatedcounter
-      if: branch = release
       on:
         branch: release
     - stage: build & publish lib
       script:
         - npm run build:lib
-      if: branch = release
