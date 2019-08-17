@@ -5,12 +5,12 @@
   "author": "Joao Tomaz",
   "repository": {
     "type": "git",
-    "url": "https://bitbucket.org/vanishdark/angularanimatedcounter/src/master/projects/ngx-animated-counter/"
+    "url": "https://github.com/vanishdark/angularanimatedcounter/"
   },
   "bugs": {
-    "url": "https://bitbucket.org/vanishdark/angularanimatedcounter/issues"
+    "url": "https://github.com/vanishdark/angularanimatedcounter/issues"
   },
-  "homepage": "https://bitbucket.org/vanishdark/angularanimatedcounter/src/master/projects/ngx-animated-counter/",
+  "homepage": "https://vanishdark.github.io/angularanimatedcounter/",
   "keywords": [
     "angular",
     "typescript",
