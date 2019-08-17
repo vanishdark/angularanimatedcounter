@@ -21,15 +21,10 @@ jobs:
     - stage: lint
       script:
         - ng lint
-#    - stage: test
- #     script:
- #       - npm run test:lib-coverage
- #       - npm run report-coverage:lib
-    - stage: update version
-      script:
-        - npm version minor -m "Upgrade to %s [skip ci]" --force
-      after_success:
-        - .travis/push.sh
+    #    - stage: test
+    #     script:
+    #       - npm run test:lib-coverage
+    #       - npm run report-coverage:lib
     - stage: build & publish showcase
       script:
         - npm run build:showcase
@@ -38,9 +33,9 @@ jobs:
         skip_cleanup: true
         github_token: $GITHUB_TOKEN
         local_dir: dist/angularanimatedcounter
-        target_branch: gh-pages
-      on:
-        branch: gh-pages
+      if: branch = master
     - stage: build & publish lib
       script:
         - npm run build:lib
+        - npm run publish:lib
+      if: branch = master
