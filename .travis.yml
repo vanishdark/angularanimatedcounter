@@ -31,7 +31,7 @@ jobs:
         - npm version minor -m "Upgrade to %s [skip ci]" --force
     - stage: build & publish showcase
       script:
-        - npm run build:demo
+        - npm run build:showcase
       deploy:
         provider: pages
         skip_cleanup: true
