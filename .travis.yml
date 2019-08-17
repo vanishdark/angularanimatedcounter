@@ -39,7 +39,7 @@ jobs:
         github_token: $GITHUB_TOKEN
         local_dir: dist/angularanimatedcounter
       on:
-        branch: release
+        branch: gh-pages
     - stage: build & publish lib
       script:
         - npm run build:lib
