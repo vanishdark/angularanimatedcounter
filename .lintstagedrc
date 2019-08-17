@@ -1,7 +1,0 @@
-{
-  "printWidth": 120,
-  "singleQuote": true,
-  "tabWidth": 2,
-  "format:check": "prettier --list-different 'projects/**/*.ts'",
-  "format:write": "prettier --write 'projects/**/*.ts'"
-}
