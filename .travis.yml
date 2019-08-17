@@ -31,7 +31,7 @@ jobs:
       deploy:
         provider: pages
         skip_cleanup: true
-        github_token: $GITHUB_TOKEN
+        github_token: $GH_TOKEN
         local_dir: dist/angularanimatedcounter
       if: branch = master
     - stage: build & publish lib
