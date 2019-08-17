@@ -29,7 +29,7 @@ jobs:
       script:
         - npm version minor -m "Upgrade to %s [skip ci]" --force
       after_success:
-        - .push.sh
+        - sh .push.sh
     - stage: build & publish showcase
       script:
         - npm run build:showcase
