@@ -16,7 +16,7 @@
     "test": "ng test",
     "test:lib-coverage": "ng test --code-coverage --watch=false",
     "report-coverage:lib": "cat ./coverage/ng-alert/lcov.info | codecov",
-    "publish:lib": "npx angular-cli-ghpages --dir=./dist/angularanimatedcounter",
+    "publish:lib": "npx angular-ghpages --dir=./dist/angularanimatedcounter",
     "publish:demo": "npx semantic-release",
     "adjust-version": "npm-run-all adjust-version:*",
     "adjust-version:lib": "rjp projects/ngx-animated-counter/package.json version $VERSION",

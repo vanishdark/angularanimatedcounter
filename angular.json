@@ -110,7 +110,7 @@
         }
       }
     },
-    "y-e2e": {
+    "angularanimatedcounter-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
