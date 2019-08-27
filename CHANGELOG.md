@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/vanishdark/angularanimatedcounter/compare/v1.0.0...v1.0.1) (2019-08-27)
+
+
+### Bug Fixes
+
+* **package:** update ngx-animated-counter to version 1.0.0 ([e1707bd](https://github.com/vanishdark/angularanimatedcounter/commit/e1707bd))
+
 # 1.0.0 (2019-08-17)
 
 
