@@ -1,6 +1,6 @@
 {
   "name": "angularanimatedcounter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -47,7 +47,7 @@
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.802.2",
+    "@angular-devkit/build-angular": "^0.803.0",
     "@angular-devkit/build-ng-packagr": "^0.803.0",
     "@angular/cli": "^8.2.2",
     "@angular/language-service": "^8.2.2",
