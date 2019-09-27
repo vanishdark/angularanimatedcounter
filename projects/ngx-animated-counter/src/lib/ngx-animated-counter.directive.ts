@@ -85,6 +85,7 @@ export class NgxAnimatedCounterDirective {
 
     let intermediate = _this._countFrom;
     const increment = Math.round(Math.abs(_this._countTo - _this._countFrom) / ((_this._duration * 1000) / _this._step));
+    increment = increment !== 0 ? increment : 0;
 
     _this.countChange.emit(intermediate);
 
